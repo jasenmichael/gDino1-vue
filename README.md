@@ -1,4 +1,4 @@
-http://jmh-gDino1-vue.surge.sh
+live-demo --> http://jmh-gDino1-vue.surge.sh
 
 clone
 ```
@@ -14,11 +14,6 @@ npm install
 run dev server
 ```
 npm run dev
-```
-
-build
-```
-npm run build
 ```
 
 run cypress tests
