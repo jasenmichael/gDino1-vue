@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://jmh-gDino1-vue.surge.sh",
+    "integrationFolder": "tests",
+    "screenshotsFolder": "tests/screenshots",
+    "videosFolder": "tests/recordings",
+    "pluginsFile": false,
+    "supportFile": false
+}
