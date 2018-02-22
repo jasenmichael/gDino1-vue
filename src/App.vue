@@ -26,9 +26,6 @@ export default {
   methods: {
     setListings(listings) {
       this.listings = listings
-    },
-    postNewJob(newJob) {
-      this.listings.unshift(newJob)
     }
   },
   data() {

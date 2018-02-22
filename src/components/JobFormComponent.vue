@@ -1,7 +1,7 @@
 <template>
 <aside id="side-bar">
   <h3>Add a Job</h3>
-  <form class="job-form" @submit.prevent="submit().addNewJob()">
+  <form class="job-form" @submit.prevent="submit">
     <label for="title">Title</label>
     <input type="text" name="title" v-model="title">
     <label for="pay">Compensation</label>
@@ -31,24 +31,12 @@ export default {
   },
   methods: {
     submit() {
-      var self = this
-
-      return {
-        addNewJob() {
-          let newJob = {}
-          newJob.title = self.title
-          newJob.description = self.description
-          newJob.pay = self.pay
-          newJob.interested = ''
-          console.log(newJob);
-          //this.listings.unshift(newJob)
-          this.postNewJob(newJob)
-        },
-        postNewJob(newJob) {
-          self.listings.unshift(newJob)
-        }
-
-      }
+      let newJob = {}
+      newJob.title = this.title
+      newJob.description = this.description
+      newJob.pay = this.pay
+      newJob.interested = ''
+      this.listings.unshift(newJob)
     }
   }
 }
