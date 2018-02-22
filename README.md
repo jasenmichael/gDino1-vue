@@ -11,12 +11,7 @@ cd gDino1-vue
 npm install
 ```
 
-run dev server
-```
-npm run dev
-```
-
-run cypress tests
+run cypress tests on the live-demo
 ```
 npm test
 ```
