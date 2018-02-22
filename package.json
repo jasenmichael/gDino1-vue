@@ -8,8 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "test": "npx cypress run --browser chrome",
-    "live-test": "npx cypress-live run --browser chrome"
+    "test": "npx cypress-live run --browser chrome"
   },
   "dependencies": {
     "vue": "^2.5.2",
